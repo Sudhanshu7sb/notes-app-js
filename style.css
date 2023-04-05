@@ -1,0 +1,281 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  CSS reset ends */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #202124;
+	color: whitesmoke;
+}
+
+.header {
+	width: 100%;
+	padding: 0.6rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 0.5px solid grey;
+	padding-left: 4rem;
+}
+
+.header img {
+	width: 2.5rem;
+}
+
+.header h2 {
+	font-weight: 500;
+	font-size: x-large;
+
+
+}
+
+
+.navlinks {
+	align-self: flex-end;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	padding-left: 3rem;
+	gap: 0.7rem;
+
+}
+
+.navlinks h4:hover {
+	background: white;
+	color: black;
+}
+
+.navlinks h4 {
+
+	background: transparent;
+	color: white;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid white;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+
+
+
+#input-box {
+	margin: 1.5rem 2rem;
+	width: 30%;
+	/* border: 1px solid grey; */
+	padding: 23px;
+}
+
+.create-note-title {
+	color: whitesmoke;
+	font-size: x-large;
+	margin:0.5rem 0;
+}
+
+
+#input-box input,
+textarea {
+	width: 80%;
+	background-color: transparent;
+	border: 1px solid grey;
+	outline: none;
+	margin-top: 6px;
+	padding:0.5rem;
+	color: white;
+}
+
+#input-box button {
+	background: transparent;
+	color: white;
+	margin:0.5rem 0 ;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid white;
+	border-radius: 0.2rem;
+}
+
+#input-box button:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+
+
+.title{
+	margin: 0.5rem 3rem;
+}
+
+#notes-list, #archived-notes-list {
+	padding: 23px;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
+}
+
+.note {
+	width: 300px;
+	color: #a1a0a0;
+	overflow-wrap: break-word;
+	margin: 12px;
+	padding: 12px;
+	border: 1px solid grey;
+	background: transparent;
+}
+
+.note .buttons-container {
+	width: 100%;
+	display: flex;
+	gap: 0.8rem;
+	justify-content: flex-end;
+}
+
+.note button {
+
+	background: transparent;
+	color: white;
+	padding: 0.5rem ;
+	border: 1px solid white;
+	border-radius: 0.2rem;
+
+
+}
+
+.note button:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+}

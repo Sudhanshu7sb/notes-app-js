@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="notes_logo">
+        <h2>Notes</h2>
+    </header>
+    <section id="input-box">
+        <h4 class="create-note-title">Create Note</h4>
+
+        <form id="add-note-form">
+            <label for="note-title-input">Title:</label><br>
+            <input type="text" id="note-title-input" required /><br>
+
+            <label for="note-body-input">Body:</label><br>
+            <textarea id="note-body-input" required></textarea><br>
+
+            <label for="note-due-date-input">Due Date:</label><br>
+            <input type="datetime-local" id="note-due-date-input" /><br>
+
+            <button type="submit">Add Note</button>
+        </form>
+    </section>
+
+    <h2 class="title">Notes</h2>
+    <div id="notes-list"></div>
+
+    <h2 class="title">Archived Notes</h2>
+    <div id="archived-notes-list"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
